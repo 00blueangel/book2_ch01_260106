@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 정보 입력</title>
+</head>
+<body>
+    <h1>개인 정보 입력</h1>
+
+    <form action="http://127.0.0.1:8000/hello" method="get">
+        <fieldset>
+            <legend>GET 요청</legend>
+            <label>성명: <input type="text" name="name" value="lee"></label><br>
+            <label>주소: <input type="text" name="address"></label><br>
+            <label>전화번호: <input type="text" name="phone"></label><br>
+            <label>Email: <input type="email" name="email"></label><br>
+            <label>나이: <input type="number" name="age"></label><br>
+            <label>성별: 
+                <select name="gender">
+                    <option value="남">남</option>
+                    <option value="여">여</option>
+                </select>
+            </label><br>
+            <input type="submit" value="GET 전송">
+        </fieldset>
+    </form>
+
+    <form action="http://127.0.0.1:8000/hello" method="post">
+        <fieldset>
+            <legend>POST 요청</legend>
+            <label>성명: <input type="text" name="name" value="lee"></label><br>
+            <label>주소: <input type="text" name="address"></label><br>
+            <label>전화번호: <input type="text" name="phone"></label><br>
+            <label>Email: <input type="email" name="email"></label><br>
+            <label>나이: <input type="number" name="age"></label><br>
+            <label>성별: 
+                <select name="gender">
+                    <option value="남">남</option>
+                    <option value="여">여</option>
+                </select>
+            </label><br>
+            <input type="submit" value="POST 전송">
+        </fieldset>
+    </form>
+</body>
+</html>
